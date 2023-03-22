@@ -15,33 +15,86 @@ Performed initial data cleaning after scrapping such as player name correction, 
 ## Data Modelling:
 Connected all the datasets with based on some defined primary keys such as team and match ids. Also, created many measures, calculated columns and parameters for data analysis and dash boarding using DAX.
 
+## Data Analysis Expression (DAX)
+Measures used in visualization are:
+
+- Total Runs = `SUM(t20_batting_summary[runs])`
+
+- Total Innings Batted =`COUNT(t20_batting_summary[matchID])`
+
+- Total Innings Dismissed = `SUM(t20_batting_summary[Out])`
+
+- Batting Avg = `DIVIDE([Total Runs],[Total Innings Dismissed],0)`
+
+- Total balls faced =`SUM(t20_batting_summary[balls])`
+
+- Strike rate = `DIVIDE([Total Runs],[total balls faced],0)*100`
+
+- Batting Possition = `ROUNDUP(AVERAGE(t20_batting_summary[battingPos]),0)`
+
+- Boundary % = `DIVIDE(SUM(t20_batting_summary[Boundary runs]),[Total Runs],0)*100`
+
+- Avg. balls faced = ` AVERAGE(t20_batting_summary[balls])`
+
+- wickets = `SUM(t20_bowling_summary[wickets])`
+
+- Balls Bowled = `SUM(t20_bowling_summary[balls])`
+
+- Runs Conced = `SUM(t20_bowling_summary[runs])`
+
+- Economy = `DIVIDE([Runs Conced],([Balls Bowled]/6),0)`
+
+- Bowling Strike Rate =`DIVIDE([Balls Bowled],[wickets],0)`
+
+- Bowling Avrage = `DIVIDE([Runs Conced],[wickets],0)`
+
+- Total Innings Bowled = `DISTINCTCOUNT(t20_bowling_summary[matchID])`
+
+- Dot Ball % =` DIVIDE(SUM(t20_bowling_summary[zeros]),SUM(t20_bowling_summary[balls]),0)`
+
+- Player selection = `if(ISFILTERED(t20_players_info[name]),"1","0")`
+
+- Display Text = `if([Player selection] = "1"," ","Select Player(s) by clicking the player's name to see their invidual or combined strength")`
+
+- Color Callout Value =`if([Player selection]="0","#E8D166","#1D1D2E")`
+
+- boundary runs batting =`t20_batting_summary[fours]*4 + t20_batting_summary[sixes]*6`
+
+- boundary runs bowling =`t20_bowling_summary[fours]*4+t20_bowling_summary[sixes]*6`
+
 ## Dashboard:
-Created final dashboard using Power BI visuals
+Data visualization for the dataset was done using Microsoft Power BI Desktop:
 
-## Player Analysis : 
+### Player Analysis 
 
-### Openers
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-2](https://user-images.githubusercontent.com/118357991/226159999-bc423241-a835-49c6-bbaf-4810089bbe44.png)
-
-
-### Middle Order
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-3](https://user-images.githubusercontent.com/118357991/226160125-3183adf0-8155-4060-b47f-083f24771fa3.png)
+|    Openers      |
+| --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-2](https://user-images.githubusercontent.com/118357991/226159999-bc423241-a835-49c6-bbaf-4810089bbe44.png)|
 
 
-### Finisher
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-4](https://user-images.githubusercontent.com/118357991/226160218-37527b00-f0da-4365-8a7b-fadff816d621.png)
+ | Middle Order |
+ | --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-3](https://user-images.githubusercontent.com/118357991/226160125-3183adf0-8155-4060-b47f-083f24771fa3.png)|
 
 
-### All Rounder
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-5](https://user-images.githubusercontent.com/118357991/226160322-29a2dac1-928f-4533-8ffb-3f1d4968d8cd.png)
+ | Finisher |
+ | --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-4](https://user-images.githubusercontent.com/118357991/226160218-37527b00-f0da-4365-8a7b-fadff816d621.png)|
 
 
-### Specilist Fast Bolwers
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-6](https://user-images.githubusercontent.com/118357991/226160372-cdb65794-d49f-4aa8-b884-8f1bd6bd97e0.png)
+| All Rounder |
+| --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-5](https://user-images.githubusercontent.com/118357991/226160322-29a2dac1-928f-4533-8ffb-3f1d4968d8cd.png)|
 
 
-### Final Best 11 Players
-![2022 T20 Cricket World Cup Dashboard- Best Final 11-8](https://user-images.githubusercontent.com/118357991/226160404-653cf126-519c-426f-b715-a5041535e8d7.png)
+| Specilist Fast Bolwers |
+| --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-6](https://user-images.githubusercontent.com/118357991/226160372-cdb65794-d49f-4aa8-b884-8f1bd6bd97e0.png)|
+
+
+| Final Best 11 Players |
+| --------------- |
+|![2022 T20 Cricket World Cup Dashboard- Best Final 11-8](https://user-images.githubusercontent.com/118357991/226160404-653cf126-519c-426f-b715-a5041535e8d7.png)|
 
 
 ## Tools, Software and Libraries
