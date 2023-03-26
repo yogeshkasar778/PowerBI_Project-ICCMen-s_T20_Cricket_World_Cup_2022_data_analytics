@@ -141,11 +141,3 @@ https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?id=1445
 https://www.espncricinfo.com/series/icc-men-s-t20-world-cup-2022-23-1298134/namibia-vs-sri-lanka-1st-match-first-round-group-a-1298135/full-scorecard
 
 https://brightdata.com/cp/data_collector/collectors/c_lefxe7xf2rj3m5b1b3/code?draft_id=lefxeciy8d6v38d3d
-
-# Shareable Link
-
-You can interact with the report here:
-
-[View Report](https://app.powerbi.com/groups/me/reports/47c93acb-731f-463a-bfc1-77e8b91400d8/ReportSectione37fe7171b5461c01bd0?redirectedFromSignup=1,1)
-
-
