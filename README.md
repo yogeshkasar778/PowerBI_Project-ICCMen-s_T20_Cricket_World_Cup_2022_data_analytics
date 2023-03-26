@@ -1,5 +1,20 @@
 # ICC Men's T20-Cricket World Cup 2022 Data Analysis
 ![ICC mEN'S t20](https://user-images.githubusercontent.com/118357991/226156747-e978c29f-7dde-40e1-b47f-dc45255cc5af.png)
+
+## Table of Contents :
+
+- [Problem Statement](https://github.com/yogeshkasar778/PowerBI-Project--ICCMen-s-T20-Cricket-World-Cup-2022-data-analysis/edit/main/README.md#problem-statement-)
+- [Datasource](https://github.com/yogeshkasar778/PowerBI-Project--ICCMen-s-T20-Cricket-World-Cup-2022-data-analysis/edit/main/README.md#datasource-)
+- [Data Collection]()
+- [Data Transformation]()
+- [Data Modelling]()
+- [Data Analysis Expression (DAX)]()
+- [Dashboard]()
+- [Tools, Software and Libraries]()
+- [References]()
+
+## Problem Statement :
+
 In This project Created a Power BI Dashboard which helps to review and compare performances of all the players in T20 Men's Cricket World Cup 2022 tournament. This dashboard also enables us to select the best 11 of the tournament based on their performance based on defined selection criteria which is included as a part of problem statement.
 
 ## Datasource :
@@ -97,7 +112,7 @@ Data visualization for the dataset was done using Microsoft Power BI Desktop:
 |![2022 T20 Cricket World Cup Dashboard- Best Final 11-8](https://user-images.githubusercontent.com/118357991/226160404-653cf126-519c-426f-b715-a5041535e8d7.png)|
 
 
-## Tools, Software and Libraries
+## Tools, Software and Libraries :
 
 1.Jupyter Notebook
 
@@ -127,5 +142,10 @@ https://www.espncricinfo.com/series/icc-men-s-t20-world-cup-2022-23-1298134/nami
 
 https://brightdata.com/cp/data_collector/collectors/c_lefxe7xf2rj3m5b1b3/code?draft_id=lefxeciy8d6v38d3d
 
+# Shareable Link
+
+You can interact with the report here:
+
+[View Report](https://app.powerbi.com/groups/me/reports/47c93acb-731f-463a-bfc1-77e8b91400d8/ReportSectione37fe7171b5461c01bd0?redirectedFromSignup=1,1)
 
 
