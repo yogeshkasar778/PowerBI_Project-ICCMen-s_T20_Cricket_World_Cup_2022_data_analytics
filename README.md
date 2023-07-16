@@ -1,4 +1,4 @@
-# ICC Men's T20-Cricket World Cup 2022 Data Analysis
+# ICC Men's T20-Cricket World Cup 2022 Data Analytics
 ![ICC mEN'S t20](https://user-images.githubusercontent.com/118357991/226156747-e978c29f-7dde-40e1-b47f-dc45255cc5af.png)
 
 ## Table of Contents :
