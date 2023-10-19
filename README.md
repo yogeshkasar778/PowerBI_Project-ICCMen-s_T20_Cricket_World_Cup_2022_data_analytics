@@ -77,7 +77,7 @@ Measures used in visualization are:
 
 - boundary runs bowling =`t20_bowling_summary[fours]*4+t20_bowling_summary[sixes]*6`
 
-## Dashboard:
+## Reports:
 Data visualization for the dataset was done using Microsoft Power BI Desktop:
 
 ### Player Analysis 
